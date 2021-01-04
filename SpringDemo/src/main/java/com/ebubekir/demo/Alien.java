@@ -2,7 +2,7 @@ package com.ebubekir.demo;
 
 public class Alien {
 
-	int age;
+	private int age;
 	
 	public Alien() {
 		System.out.println("Alien object created..");
@@ -10,6 +10,14 @@ public class Alien {
 
 	public void code() {
 		System.out.println("Im coding..");
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		System.out.println("Age Assigned");
+		this.age = age;
 	}
 
 }
