@@ -9,6 +9,10 @@ public class Alien {
 		System.out.println("Alien object created..");
 	}
 
+	public Alien(int age) {
+		this.age = age;
+	}
+
 	public void code() {
 		System.out.println("Im coding..");
 		laptop.compile();

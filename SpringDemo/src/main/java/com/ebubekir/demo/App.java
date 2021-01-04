@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 	public static void main(String[] args) {
 
-//    	BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+//    	BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml")); Old method to use beanFactory
 		ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
 
 		Alien obj1 = (Alien) factory.getBean("alien");
