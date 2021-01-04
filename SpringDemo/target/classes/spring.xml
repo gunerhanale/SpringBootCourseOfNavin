@@ -5,6 +5,11 @@
 
 	<bean id="alien" class="com.ebubekir.demo.Alien">
 		<property name="age" value="10"></property>
+		<property name="laptop" ref="laptop"></property>
+	</bean>
+	
+	<bean id="laptop" class="com.ebubekir.demo.Laptop">
+		
 	</bean>
 
 </beans>
