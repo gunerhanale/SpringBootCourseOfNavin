@@ -3,19 +3,15 @@ package com.ebubekir.demo;
 public class Alien {
 
 	private int age;
-	private Laptop laptop;
+	private Computer com;
 	
 	public Alien() {
 		System.out.println("Alien object created..");
 	}
 
-	public Alien(int age) {
-		this.age = age;
-	}
-
 	public void code() {
 		System.out.println("Im coding..");
-		laptop.compile();
+		com.compile();
 	}
 	
 	public int getAge() {
@@ -26,13 +22,15 @@ public class Alien {
 		this.age = age;
 	}
 
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getCom() {
+		return com;
 	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setCom(Computer com) {
+		this.com = com;
 	}
+
+	
 	
 	
 

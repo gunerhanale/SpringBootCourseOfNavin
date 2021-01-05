@@ -3,15 +3,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="alien" class="com.ebubekir.demo.Alien">
-		<!-- <property name="age" value="10"></property> we used it to learn how 
-			to use setter injection -->
+	<bean id="alien" class="com.ebubekir.demo.Alien" autowire="byType">   <!-- autowire="byName" -->
+		<property name="age" value="10"></property>     <!--we used it to use setter injection -->
 		<!-- we can use here scope attribute to make it prototype (scope="prototype") -->
-		<constructor-arg value="12"></constructor-arg>
-		<property name="laptop" ref="laptop"></property>
+		<!-- <constructor-arg value="12"></constructor-arg>  We can use that for the constructor injection-->
+<!-- 		<property name="com" ref="com"></property> -->
 	</bean>
 
-	<bean id="laptop" class="com.ebubekir.demo.Laptop">
+	<bean id="com" class="com.ebubekir.demo.Laptop" >
+
+	</bean>
+	
+	<bean id="desktop" class="com.ebubekir.demo.Desktop" primary="true">
 
 	</bean>
 

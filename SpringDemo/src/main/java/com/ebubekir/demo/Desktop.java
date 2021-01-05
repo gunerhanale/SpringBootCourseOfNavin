@@ -1,13 +1,13 @@
 package com.ebubekir.demo;
 
-public class Laptop implements Computer {
+public class Desktop implements Computer {
 	
-	public Laptop() {
+	public Desktop() {
 		System.out.println("Laptop object created..");
 	}
 	
 	public void compile() {
-		System.out.println("Code Compiled in a Laptop");
+		System.out.println("Code Compiled in a Desktop");
 	}
 
 }
