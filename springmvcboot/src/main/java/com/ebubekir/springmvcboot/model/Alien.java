@@ -1,12 +1,18 @@
 package com.ebubekir.springmvcboot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Alien 
 {
+	@Id
 	private int aid;
-	private String aname;
+	private String aname;	
 	
-	
-	
+	public Alien() {
+		
+	}
 	public Alien(int aid, String aname) {
 		super();
 		this.aid = aid;
@@ -28,6 +34,5 @@ public class Alien
 	public String toString() {
 		return "Alien [aid=" + aid + ", aname=" + aname + "]";
 	}
-	
 	
 }
