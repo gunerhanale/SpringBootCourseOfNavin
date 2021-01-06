@@ -7,10 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%-- 	Result is : ${num3} --%>
 	
-	Result is : ${alien}
-	
-	Welcome Back ${name}
+	${result}
+
 </body>
 </html>
