@@ -27,13 +27,13 @@
     <artifactId>hibernate-core</artifactId>
     <version>6.0.0.Alpha2</version>
 </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm  : to connect between spring and hibernate-->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
     <version>5.1.4.RELEASE</version>
 </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx : to manage transaction -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-tx</artifactId>
@@ -46,7 +46,7 @@
     <version>5.1.47</version>
 </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 : to manage connections with connpool-->
 <dependency>
     <groupId>com.mchange</groupId>
     <artifactId>c3p0</artifactId>
