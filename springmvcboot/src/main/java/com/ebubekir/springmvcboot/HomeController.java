@@ -1,6 +1,5 @@
 package com.ebubekir.springmvcboot;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,15 +36,6 @@ public class HomeController {
 		return "result";
 	}
 
-	@GetMapping("getAliens")
-	public String getAliens(Model m) {
-	
-		List<Alien> aliens = repo.findAll();
-		m.addAttribute("result", aliens);
-		
-		return "showAliens";
-	}
-	
 	@GetMapping("getAlien")
 	public String getAlien(@RequestParam int aid, Model m) {
 	
@@ -60,6 +50,15 @@ public class HomeController {
 	
 		List<Alien>  alien = repo.find(aname);
 		m.addAttribute("result", alien);
+		
+		return "showAliens";
+	}
+	
+	@GetMapping("getAliens")
+	public String getAliens(Model m) {
+	
+		List<Alien> aliens = repo.findAll();
+		m.addAttribute("result", aliens);
 		
 		return "showAliens";
 	}
